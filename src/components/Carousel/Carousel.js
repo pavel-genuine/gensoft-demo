@@ -2,8 +2,111 @@ import React from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation, EffectFade ,Pagination} from "swiper";
+import marble from '../../../public/assets/imgs/marble.jpg'
+import marblePortugal3 from '../../../public/assets/imgs/marblePortugal3.jpeg'
+import marblePortugal2 from '../../../public/assets/imgs/marblePortugal2.jpeg'
+import marbleIran from '../../../public/assets/imgs/marbleIran.jpg'
+import marbleIran1 from '../../../public/assets/imgs/marbleIran1.jpeg'
+import marbleIran2 from '../../../public/assets/imgs/marbleIran3.jpeg'
+// import marbleItaly from '../../assets/imgs/marbleItaly.jpg'
+import marbleItaly from '../../../public/assets/imgs/graniteItaly.jpg'
+import marbleItaly2 from '../../../public/assets/imgs/marbleItaly2.jpeg'
+import nut from '../../../public/assets/Hero/betelnut.jpg'
+import nut2 from '../../../public/assets/imgs/nut.jpeg'
+import ginger from '../../../public/assets/imgs/ginger2.jpg'
+
+import mung from '../../../public/assets/Hero/mung.webp'
+import tamarind from '../../../public/assets/imgs/Tamarind-seeds.jpg'
+
+export const slides = [
 
 
+    {
+        description: 'Fresh Ginger From Thailand.',
+        des: 'Fresh Ginger ',
+        url: ginger.src
+
+    },
+
+    {
+        description: 'Betel Nut (whole) From Thailand.',
+        des: 'Betel Nut (whole)',
+        url: nut2.src
+    },
+    {
+        description: 'Betel Nut (split) From Thailand.',
+        des: 'Betel Nut (split)',
+
+        url: nut.src
+    },
+    {
+        description: 'Mung Bean From Thailand.',
+        des: 'Mung Bean',
+
+        url: mung.src
+    },
+    {
+        description: 'Tamarind Seed From Thailand.',
+        des: 'Tamarind Seed',
+
+        url: tamarind.src
+    },
+
+    {
+        description: 'Best Marble Block From Portugal.',
+        des: 'Marble Portugal',
+
+        url: marble.src
+    },
+    {
+        description: 'Best Marble Block From Portugal.',
+        des: 'Marble Portugal',
+
+        url: marblePortugal2.src
+    },
+    {
+        description: 'Best Marble Block From Portugal.',
+        des: 'Marble Portugal',
+
+        url: marblePortugal3.src
+    },
+
+    {
+        description: 'Best Marble Block From Iran.',
+        des: 'Marble Iran',
+
+        url: marbleIran.src
+    },
+
+    {
+        description: 'Best Marble Block From Iran.',
+        des: 'Marble Iran',
+
+        url: marbleIran2.src
+    },
+    {
+        description: 'Best Marble Block From Italy.',
+        url: marbleItaly2.src
+    },
+    {
+        description: 'Best Marble Block From Italy.',
+        des: 'Marble Italy',
+        url: marbleItaly.src
+    },
+
+    {
+        description: 'Introduction',
+        des: 'Introduction',
+
+        url: 'https://images.unsplash.com/photo-1523215713844-973398580b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+    },
+    {
+        description: 'Contact',
+        des: 'Contact',
+
+        url: 'https://images.unsplash.com/photo-1523215713844-973398580b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+    },
+];
 
   
 const SliderOneData = [
@@ -80,22 +183,17 @@ const SliderNew = () => {
       
       
       >
-        {SliderOneData.map(({ image, subTitle, title, button }, index) => (
+        {slides.map(({ url,description }, index) => (
           <SwiperSlide key={index}>
             <div
-              className="image-layer"
-              style={{ backgroundImage: `url(${image})` }}
+              className="image-layer2"
+              style={{ backgroundImage: `url(${url})` }}
             ></div>
-            <div>
+            <div style={{backgroundColor:'#00000025',zIndex:10,height:'100vh',width:'100vw',display:'flex',justifyContent:'center',alignItems:'center'}} className="">
               <div>
-                <div  className="text-center">
-                  <p className="main-slider__subtext">{subTitle}</p>
-                  <h3 className="main-slider__title">{title}</h3>
-                  {/* <Link href={button.url}>
-                    <p className={`common_btn`}>
-                      <span>{button.label}</span>
-                    </p>
-                  </Link> */}
+                <div   className="text-center">
+                  <h3 style={{paddingTop:'80px'}} className="main-slider__title2">{description}</h3>
+             
                 </div>
               </div>
             </div>

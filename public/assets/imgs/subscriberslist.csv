@@ -1,0 +1,5 @@
+﻿"Id","Name","Price","Word Credit","Duration","Status","Trial"
+"1","Free Plan","0","1000","monthly","ACTIVE","Yes"
+"2","Basic","10","10000","monthly","ACTIVE","Yes"
+"3","Premium","20","30000","monthly","ACTIVE","Yes"
+"4","Premium Old","15","30000","monthly","DISABLED","Yes"
