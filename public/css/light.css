@@ -1671,6 +1671,81 @@ button {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+.main-slider .image-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 7000ms ease;
+  transition: -webkit-transform 7000ms ease;
+  transition: transform 7000ms ease;
+  transition: transform 7000ms ease, -webkit-transform 7000ms ease;
+}
+
+.main-slider .swiper-slide-active .image-layer {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.single-slider .image-layer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: -1;
+}
+
+
+.single-slider .image-layer2:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #0000009a;
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  z-index: -1;
+}
+.single-slider.slick-current .image-layer2 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.main-slider .image-layer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 7000ms ease;
+  transition: -webkit-transform 7000ms ease;
+  transition: transform 7000ms ease;
+  transition: transform 7000ms ease, -webkit-transform 7000ms ease;
+}
+
+.main-slider .swiper-slide-active .image-layer2 {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
 
 /*--==== hero Content ====--*/
 .hero-content .sub-title {
@@ -3043,7 +3118,7 @@ ul.check-style-one li i {
 
 /*--==== Choose Image Box ====--*/
 .choose-image-box img {
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 /*--==== CTA Image Box ====--*/
@@ -7297,7 +7372,7 @@ ul.slick-dots li.slick-active {
 }
 
 .choose-wrapper {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 40px 40px 40px 70px;
 }
 @media (max-width: 767px) {
@@ -11256,29 +11331,16 @@ textarea.input-form:focus {
   justify-content: center;
 }
 
-.main-slider .image-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
- 
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: -webkit-transform 7000ms ease;
-  transition: -webkit-transform 7000ms ease;
-  transition: transform 7000ms ease;
-  transition: transform 7000ms ease, -webkit-transform 7000ms ease;
-}
+
 
 .main-slider .container {
   position: relative;
   z-index: 10;
   padding-top: 115px;
 }
+
+
+
 
 .main-slider__title {
   white-space: pre-line;
@@ -11302,10 +11364,46 @@ textarea.input-form:focus {
   transition: transform 2000ms ease, opacity 2000ms ease,
     -webkit-transform 2000ms ease;
 }
+.main-slider__title2 {
+  white-space: pre-line;
+  font-size: 40px;
+  /* text-transform: uppercase; */
+
+  
+  color: #fff;
+  line-height: 1.15em;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(90px);
+  transform: translateY(90px);
+  -webkit-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+  -webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+  transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease,
+    -webkit-transform 2000ms ease;
+}
+.main-slider .swiper-slide-active .common_btn,
+.main-slider .swiper-slide-active .main-slider__title2,
+.main-slider .swiper-slide-active .main-slider__subtext {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0) translateX(0);
+  transform: translateY(0) translateX(0);
+}
 
 @media (min-width: 768px) {
   .main-slider__title {
     font-size: 60px;
+    margin-bottom: 40px;
+  }
+  .main-slider__title2 {
+    font-size: 70px;
     margin-bottom: 40px;
   }
 }
@@ -11315,10 +11413,17 @@ textarea.input-form:focus {
     margin-bottom: 40px;
     font-size: 70px;
   }
+  .main-slider__title2 {
+    margin-bottom: 70px;
+    font-size: 70px;
+  }
 }
 @media (min-width: 1200px) {
   .main-slider__title {
     font-size: 110px;
+  }
+  .main-slider__title2 {
+    font-size: 70px;
   }
 }
 
@@ -11356,10 +11461,7 @@ textarea.input-form:focus {
     background 500ms ease, -webkit-transform 2000ms ease;
 }
 
-.main-slider .swiper-slide-active .image-layer {
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
-}
+
 
 .main-slider .swiper-slide-active .common_btn,
 .main-slider .swiper-slide-active .main-slider__title,

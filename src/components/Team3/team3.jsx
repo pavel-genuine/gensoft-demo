@@ -20,7 +20,7 @@ const Team3 = () => {
           <div className="col-lg-4">
             <div className="item cir md-mb50">
               <div className="img">
-                <img src="/img/team/a1.jpg" alt="" />
+                <img style={{width:'400px',height:'400px'}} src="https://assets.entrepreneur.com/content/3x2/2000/1657733878-GettyImages-1085999378.jpg?format=pjeg&auto=webp&crop=1:1" alt="" />
                 <div id="circle1">
                   <svg
                     version="1.1"
@@ -50,8 +50,8 @@ const Team3 = () => {
                   </svg>
                 </div>
                 <div className="info">
-                  <h6 className="ls3">Ryan Hicks</h6>
-                  <span className="main-color fw-600">Client Manager</span>
+                  {/* <h6 className="ls3">Shovon</h6> */}
+                  <span className="main-color fw-600">Shovon</span>
                 </div>
               </div>
             </div>
@@ -59,8 +59,8 @@ const Team3 = () => {
           <div className="col-lg-4">
             <div className="item cir md-mb50">
               <div className="img">
-                <img src="/img/team/a2.jpg" alt="" />
-                <div id="circle2">
+                <img style={{width:'400px',height:'400px'}} src="https://assets.entrepreneur.com/content/3x2/2000/1657733878-GettyImages-1085999378.jpg?format=pjeg&auto=webp&crop=1:1" alt="" />
+                <div id="circle1">
                   <svg
                     version="1.1"
                     x="0px"
@@ -73,33 +73,33 @@ const Team3 = () => {
                   >
                     <defs>
                       <path
-                        id="circlePath2"
+                        id="circlePath1"
                         d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
                       />
                     </defs>
                     <circle cx="150" cy="100" r="75" fill="none" />
                     <g>
-                      <use xlinkHref="#circlePath2" fill="none" />
+                      <use xlinkHref="#circlePath1" fill="none" />
                       <text fill="green" className="custom-font">
-                        <textPath xlinkHref="#circlePath2">
-                          Purbasha team Designer Purbasha team Designer Purbasha team Designer
+                        <textPath xlinkHref="#circlePath1">
+                          CEO Manager - CEO Manager - CEO Manager -
                         </textPath>
                       </text>
                     </g>
                   </svg>
                 </div>
                 <div className="info">
-                  <h6 className="ls3">Ryan Hicks</h6>
-                  <span className="main-color fw-600">Client Manager</span>
+                  {/* <h6 className="ls3">Shovon</h6> */}
+                  <span className="main-color fw-600">Shovon</span>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="item cir sm-mb50">
+            <div className="item cir md-mb50">
               <div className="img">
-                <img src="/img/team/a3.jpg" alt="" />
-                <div id="circle3">
+                <img style={{width:'400px',height:'400px'}} src="https://assets.entrepreneur.com/content/3x2/2000/1657733878-GettyImages-1085999378.jpg?format=pjeg&auto=webp&crop=1:1" alt="" />
+                <div id="circle1">
                   <svg
                     version="1.1"
                     x="0px"
@@ -112,25 +112,24 @@ const Team3 = () => {
                   >
                     <defs>
                       <path
-                        id="circlePath3"
+                        id="circlePath1"
                         d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
                       />
                     </defs>
                     <circle cx="150" cy="100" r="75" fill="none" />
                     <g>
-                      <use xlinkHref="#circlePath3" fill="none" />
+                      <use xlinkHref="#circlePath1" fill="none" />
                       <text fill="green" className="custom-font">
-                        <textPath xlinkHref="#circlePath3">
-                          knit Designer knit Designer knit
-                          Designer
+                        <textPath xlinkHref="#circlePath1">
+                          CEO Manager - CEO Manager - CEO Manager -
                         </textPath>
                       </text>
                     </g>
                   </svg>
                 </div>
                 <div className="info">
-                  <h6 className="ls3">Ryan Hicks</h6>
-                  <span className="main-color fw-600">Client Manager</span>
+                  {/* <h6 className="ls3">Shovon</h6> */}
+                  <span className="main-color fw-600">Shovon</span>
                 </div>
               </div>
             </div>

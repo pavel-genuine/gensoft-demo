@@ -81,7 +81,7 @@ const CaseStudy = () => {
               >
                 <div className="container d-flex align-items-end">
                   <div className="cont">
-                    <Link href="/showcase/showcase-dark">
+                    <Link href="">
                       <a>
                         <span>Case Study</span>
                         <h6 className="main-color">{item.date}</h6>
