@@ -1,20 +1,22 @@
 [
     {
         "id": 1,
-        "image": "/img/arch/slid/3.jpg",
-        "title": "FLOATING HOUSE MESSINIA",
+        "image": "https://teambd.com/media/images/AR3_1434.2e16d0ba.fill-1920x1280-c100.jpg",
+
+        "title": "Purbasha Knit",
         "date": "14 Sep 2022"
     },
     {
         "id": 2,
-        "image": "/img/arch/slid/2.jpg",
-        "title": "IN THE PINE FOREST",
+        "image": "https://images.pexels.com/photos/7147454/pexels-photo-7147454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "title": "Purbasha Accessories",
         "date": "14 Sep 2022"
     },
     {
         "id": 3,
-        "image": "/img/arch/slid/1.jpg",
-        "title": "BUGANVILLA HOUSE",
+        "image": "https://images.pexels.com/photos/4614227/pexels-photo-4614227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+        "title": "Purbasha Others",
         "date": "14 Sep 2022"
     }
 ]

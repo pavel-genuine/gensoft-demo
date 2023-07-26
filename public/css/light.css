@@ -3118,7 +3118,7 @@ ul.check-style-one li i {
 
 /*--==== Choose Image Box ====--*/
 .choose-image-box img {
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 /*--==== CTA Image Box ====--*/
@@ -7372,7 +7372,7 @@ ul.slick-dots li.slick-active {
 }
 
 .choose-wrapper {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 40px 40px 40px 70px;
 }
 @media (max-width: 767px) {

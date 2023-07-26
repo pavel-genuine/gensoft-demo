@@ -25,15 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/homepage/new": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/homepage/new.js"
-    ],
     "/homepage/purbasha-light": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/homepage/purbasha-light.js"
+    ],
+    "/homepage/purbasha-new": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/homepage/purbasha-new.js"
     ]
   },
   "ampFirstPages": []
