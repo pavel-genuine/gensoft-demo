@@ -91,7 +91,7 @@ class TestimonialsArch extends React.Component {
                     <div className="cont">
                       <div className="author">
                         <div className="img">
-                          <img src="/img/clients/1.jpg" alt="" />
+                          <img src="https://assets.entrepreneur.com/content/3x2/2000/1657733878-GettyImages-1085999378.jpg?format=pjeg&auto=webp&crop=1:1" alt="" />
                         </div>
                         <h6 className="author-name color-font">
                           Alex Regelman
@@ -115,7 +115,7 @@ class TestimonialsArch extends React.Component {
                     <div className="cont">
                       <div className="author">
                         <div className="img">
-                          <img src="/img/clients/1.jpg" alt="" />
+                          <img src="https://assets.entrepreneur.com/content/3x2/2000/1657733878-GettyImages-1085999378.jpg?format=pjeg&auto=webp&crop=1:1" alt="" />
                         </div>
                         <h6 className="author-name color-font">
                           Alex Regelman
@@ -139,7 +139,7 @@ class TestimonialsArch extends React.Component {
                     <div className="cont">
                       <div className="author">
                         <div className="img">
-                          <img src="/img/clients/1.jpg" alt="" />
+                          <img src="https://assets.entrepreneur.com/content/3x2/2000/1657733878-GettyImages-1085999378.jpg?format=pjeg&auto=webp&crop=1:1" alt="" />
                         </div>
                         <h6 className="author-name color-font">
                           Alex Regelman
@@ -163,7 +163,7 @@ class TestimonialsArch extends React.Component {
                     <div className="cont">
                       <div className="author">
                         <div className="img">
-                          <img src="/img/clients/1.jpg" alt="" />
+                          <img src="https://assets.entrepreneur.com/content/3x2/2000/1657733878-GettyImages-1085999378.jpg?format=pjeg&auto=webp&crop=1:1" alt="" />
                         </div>
                         <h6 className="author-name color-font">
                           Alex Regelman

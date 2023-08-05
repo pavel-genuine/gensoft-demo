@@ -2,6 +2,8 @@
 import React from "react";
 import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
+import knit1 from '../../../public/assets/purbasha/factory/knit2.jpg'
+import knit2 from '../../../public/assets/purbasha/factory/knit3.jpg'
 
 const WorksStyle5 = () => {
   React.useEffect(() => {
@@ -45,7 +47,7 @@ const WorksStyle5 = () => {
               <div className="item-img">
                 <Link href="">
                   <a className="imago wow">
-                  <img style={{height:'550px'}} src="https://images.pexels.com/photos/7147454/pexels-photo-7147454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" />
+                  <img style={{height:'550px'}} src={knit1.src} alt="image" />
 
                     <div className="item-img-overlay"></div>
                   </a>
@@ -68,7 +70,7 @@ const WorksStyle5 = () => {
               <div className="item-img">
                 <Link href="">
                   <a className="imago wow">
-                  <img style={{height:'550px'}} src="https://images.pexels.com/photos/4622215/pexels-photo-4622215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" />
+                  <img style={{height:'550px'}} src={knit2.src} alt="image" />
                     <div className="item-img-overlay"></div>
                   </a>
                 </Link>

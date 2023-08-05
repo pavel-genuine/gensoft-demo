@@ -4,15 +4,18 @@ import React from "react";
 import { Link } from "react-scroll";
 import appData from "../../data/app.json";
 import { handleDropdown, handleMobileDropdown } from "../../common/navbar";
+import logo from "../../../public/assets/purbasha/logo.png";
+
 
 const NavbarArch = ({ navbarRef, theme }) => {
   
   return (
     <nav className="navbar navbar-expand-lg" ref={navbarRef}>
       <div className="container">
-        <h5 style={{backgroundColor:'green',borderRadius:'10%', color:'white',textAlign:'center',paddingRight:'10px',paddingLeft:'10px',marginLeft:'10px'}}  href="/">
+        {/* <h5 style={{backgroundColor:'green',borderRadius:'10%', color:'white',textAlign:'center',paddingRight:'10px',paddingLeft:'10px',marginLeft:'10px'}}  href="/">
          Purbasha
-        </h5>
+        </h5> */}
+        <img style={{ width: "80px" }} src={logo.src} alt=""  />
 
         <button
           className="navbar-toggler"
