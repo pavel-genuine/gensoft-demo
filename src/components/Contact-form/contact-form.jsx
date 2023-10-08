@@ -17,8 +17,8 @@ const ContactForm = () => {
   return (
     <section className="contact section-padding">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-6">
+        <div >
+          {/* <div className="col-lg-6">
             <div className="form md-mb50">
               <h4 className="fw-700 color-font mb-50">Get In Touch.</h4>
               <Formik
@@ -88,7 +88,7 @@ const ContactForm = () => {
                 )}
               </Formik>
             </div>
-          </div>
+          </div> */}
           <div className="col-lg-5 offset-lg-1">
             <div className="cont-info">
               <h4 className="fw-700 color-font mb-50">Contact Info.</h4>

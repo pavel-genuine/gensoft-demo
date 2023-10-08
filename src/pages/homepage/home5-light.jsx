@@ -16,21 +16,8 @@ const Homepage5 = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
-  React.useEffect(() => {
-    var navbar = navbarRef.current;
-    if (window.pageYOffset > 300) {
-      navbar.classList.add("nav-scroll");
-    } else {
-      navbar.classList.remove("nav-scroll");
-    }
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        navbar.classList.add("nav-scroll");
-      } else {
-        navbar.classList.remove("nav-scroll");
-      }
-    });
-  }, [navbarRef]);
+
+
   return (
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} theme="themeL" />

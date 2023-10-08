@@ -20,19 +20,7 @@ const WorksDark = () => {
         MainContent.current.style.marginTop = slidHeight + "px";
       }
     }, 1000);
-    var navbar = navbarRef.current;
-    if (window.pageYOffset > 300) {
-      navbar.classList.add("nav-scroll");
-    } else {
-      navbar.classList.remove("nav-scroll");
-    }
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        navbar.classList.add("nav-scroll");
-      } else {
-        navbar.classList.remove("nav-scroll");
-      }
-    });
+    
   }, [fixedHeader, MainContent, navbarRef]);
 
   return (

@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
 import WorksHeader from "../../components/Works-header/works-header";
 import WorksStyle1 from "../../components/Works-style1/works-style1";
+import Intro4 from "../../components/Intro4/intro4";
 
 const WorksLight = () => {
   const fixedHeader = React.useRef(null);
@@ -20,19 +21,7 @@ const WorksLight = () => {
         MainContent.current.style.marginTop = slidHeight + "px";
       }
     }, 1000);
-    var navbar = navbarRef.current;
-    if (window.pageYOffset > 300) {
-      navbar.classList.add("nav-scroll");
-    } else {
-      navbar.classList.remove("nav-scroll");
-    }
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        navbar.classList.add("nav-scroll");
-      } else {
-        navbar.classList.remove("nav-scroll");
-      }
-    });
+    
   }, [fixedHeader, MainContent, navbarRef]);
 
   return (
@@ -43,11 +32,11 @@ const WorksLight = () => {
           <div className="gradient-circle two"></div>
         </div>
       </div>
-      <Navbar nr={navbarRef} lr={logoRef} theme="themeL" />
-        <WorksHeader sliderRef={fixedHeader} />
+
+      <Intro4 blackStar />
       <div ref={MainContent} className="main-content">
         <WorksStyle1 />
-        <Footer />
+   
       </div>
     </LightTheme>
   );

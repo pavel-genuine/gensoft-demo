@@ -29,21 +29,7 @@ import { sliderProps } from "./purbasha-new";
 
 const Homepage = () => {
   const navbarRef = React.useRef(null);
-  React.useEffect(() => {
-    var navbar = navbarRef.current;
-    if (window.pageYOffset > 300) {
-      navbar.classList.add("nav-scroll");
-    } else {
-      navbar.classList.remove("nav-scroll");
-    }
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        navbar.classList.add("nav-scroll");
-      } else {
-        navbar.classList.remove("nav-scroll");
-      }
-    });
-  }, [navbarRef]);
+ 
   return (
     <>
       <Head>
@@ -58,7 +44,7 @@ const Homepage = () => {
         />
       </Head>
       <LightTheme>
-        <NavbarArch navbarRef={navbarRef} theme="themeL" />
+       
         {/* <Intro5 /> */}
         <SliderOne></SliderOne>
         <AboutUs6 />
@@ -405,7 +391,7 @@ const Homepage = () => {
         <TestimonialsArch />
         {/* <LatestNews /> */}
         {/* <ContactArch /> */}
-        <FooterArch />
+ 
       </LightTheme>
     </>
   );

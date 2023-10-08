@@ -4,7 +4,7 @@ import appData from '../../data/app.json'
 
 const FooterArch = () => {
   return (
-    <footer className="sub-bg">
+    <footer style={{zIndex:10}} className="sub-bg">
       <div className="container">
         <div className="row">
           <div className="col-lg-4">

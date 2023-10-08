@@ -16,35 +16,20 @@ const About = () => {
  const navbarRef = React.useRef(null);
  const logoRef = React.useRef(null);
 
- React.useEffect(() => {
-   var navbar = navbarRef.current,
-     logo = logoRef.current;
-   if (window.pageYOffset > 300) {
-     navbar.classList.add("nav-scroll");
-   } else {
-     navbar.classList.remove("nav-scroll");
-   }
-   window.addEventListener("scroll", () => {
-     if (window.pageYOffset > 300) {
-       navbar.classList.add("nav-scroll");
-     } else {
-       navbar.classList.remove("nav-scroll");
-     }
-   });
- }, [navbarRef]);
+
   return (
     <LightTheme>
-      <Navbar nr={navbarRef} lr={logoRef} theme="themeL" />
+ 
       <PagesHeader />
       <AboutIntro />
-      <Services style="4item" />
+      {/* <Services style="4item" /> */}
       <VideoWithTestimonials />
-      <SkillsCircle from="aboutPage" />
-      <Team />
+      {/* <SkillsCircle from="aboutPage" /> */}
+      {/* <Team /> */}
       <MinimalArea />
       <Clients theme="light" />
       <CallToAction />
-      <Footer />
+
     </LightTheme>
   );
 };

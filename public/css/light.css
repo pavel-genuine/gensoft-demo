@@ -11627,13 +11627,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#12c2e9),
-    color-stop(#c471ed),
-    to(#f64f59)
+    from(green),
+    color-stop(white),
+    to(black)
   );
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: -webkit-linear-gradient(left,green,grey,black);
+  background: -o-linear-gradient(left, green,grey,black);
+  background: linear-gradient(to right, green,grey,black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -11660,13 +11660,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#12c2e9),
-    color-stop(#c471ed),
-    to(#f64f59)
+    from(green),
+    color-stop(black),
+    to(grey)
   );
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: -webkit-linear-gradient(left, green, grey,black);
+  background: -o-linear-gradient(left,green, grey,black);
+  background: linear-gradient(to right,green, grey,black);
 }
 
 .line.top {
@@ -13264,7 +13264,7 @@ body {
 }
 
 .navbar.light .navbar-nav .nav-link {
-  color: #111;
+  color: #fff;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -13289,8 +13289,8 @@ body {
 }
 
 .navbar .navbar-nav .dropdown-item:hover {
-  background: transparent;
-  color: #12c2e9;
+  background:green;
+  color:white
 }
 
 .navbar .dropdown-menu {
@@ -13418,7 +13418,7 @@ body {
 }
 
 .nav-scroll .navbar-nav .nav-link {
-  color: #111;
+  color: #fff;
 }
 
 .topnav {
@@ -14269,7 +14269,7 @@ body {
 }
 
 .particles .cont h1 {
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 800;
 }
 
@@ -14881,9 +14881,9 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 70%;
-  background-image: -webkit-linear-gradient(45deg, #059dff, #36c6f0);
-  background-image: -o-linear-gradient(45deg, #059dff, #36c6f0);
-  background-image: linear-gradient(45deg, #059dff, #36c6f0);
+  background-image: -webkit-linear-gradient(45deg, green, black);
+  background-image: -o-linear-gradient(45deg,green, black);
+  background-image: linear-gradient(45deg, green, black);
   opacity: 0.25;
   -webkit-filter: blur(100px);
   filter: blur(100px);
@@ -14894,9 +14894,9 @@ body {
   top: -250px;
   right: -250px;
   bottom: auto;
-  background-image: -webkit-linear-gradient(45deg, #fb5343, #6549d5);
-  background-image: -o-linear-gradient(45deg, #fb5343, #6549d5);
-  background-image: linear-gradient(45deg, #fb5343, #6549d5);
+  background-image: -webkit-linear-gradient(45deg,green, black);
+  background-image: -o-linear-gradient(45deg, green, black);
+  background-image: linear-gradient(45deg, green, black);
 }
 
 .main-content {
@@ -19792,7 +19792,7 @@ footer .item .copy-right p a {
   }
 
   .navbar .navbar-nav .nav-link:hover {
-    color: #12c2e9;
+    color: green;
   }
 
   .slider .parallax-slider .caption.dig {

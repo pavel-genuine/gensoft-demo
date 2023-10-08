@@ -10,11 +10,13 @@ import logo from "../../../public/assets/purbasha/logo.png";
 const NavbarArch = ({ navbarRef, theme }) => {
   
   return (
-    <nav className="navbar navbar-expand-lg" ref={navbarRef}>
+    <nav style={{background: 'black'}} className="navbar navbar-expand-lg " ref={navbarRef}>
       <div className="container">
+        
         {/* <h5 style={{backgroundColor:'green',borderRadius:'10%', color:'white',textAlign:'center',paddingRight:'10px',paddingLeft:'10px',marginLeft:'10px'}}  href="/">
          Purbasha
         </h5> */}
+
         <img style={{ width: "80px" }} src={logo.src} alt=""  />
 
         <button
@@ -34,20 +36,57 @@ const NavbarArch = ({ navbarRef, theme }) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+              <Link
+                className="nav-link"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Home
+              </Link>
+            </li>
             <li className="nav-item dropdown" onClick={handleDropdown}>
               <span
                 className="nav-link dropdown-toggle"
                 data-toggle="dropdown"
                 data-scroll-nav="0"
               >
-                Home
+                Products
               </span>
+              
               <div className="dropdown-menu">
+                <Link
+                  className="dropdown-item"
+                  href={`/underwear`}
+                >
+                  Underwear
+                </Link>
+                <Link
+                  className="dropdown-item"
+                  href={`/t-shirt`}
+                >
+                  T-Shirt
+                </Link>
                 <a
                   className="dropdown-item"
                   href={``}
                 >
-                  Main Home
+                  Polo Shirt
+                </a>
+                <a
+                  className="dropdown-item"
+                  href={``}
+                >
+                  Sweat Shirt
+                </a>
+                <a
+                  className="dropdown-item"
+                  href={``}
+                >
+                  Hoodie
                 </a>
 
               </div>

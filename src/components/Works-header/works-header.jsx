@@ -1,6 +1,6 @@
 import React from "react";
 import fadeWhenScroll from "../../common/fadeWhenScroll";
-
+import Background from "../../../public/assets/purbasha/factory/factory1.jpg";
 const WorksHeader = ({ sliderRef }) => {
   React.useEffect(() => {
     fadeWhenScroll(document.querySelectorAll(".fixed-slider .capt .parlx"));
@@ -8,15 +8,18 @@ const WorksHeader = ({ sliderRef }) => {
   return (
     <header
       ref={sliderRef}
-      className="works-header fixed-slider hfixd valign sub-bg"
+      style={{backgroundImage: `url(${Background.src})`, backgroundRepeat:'no-repeat', backgroundSize:'cover',}}
+      className="works-header fixed-slider hfixd valign sub-bg "
     >
-      <div className="container">
-        <div className="row justify-content-center">
+      <div 
+      style={{backgroundColor:'black',opacity:'20%' ,height:'80vh',width:'100vw',backgroundSize:'cover',paddingTop:'15%'}} 
+      >
+        <div className="row justify-content-center align-content-center">
           <div className="col-lg-7 col-md-9 static">
-            <div className="capt mt-50">
-              <div className="parlx text-center">
-                <h1 className="color-font">amazing works</h1>
-                <p>
+            <div className="capt">
+              <div className=" text-center">
+                <h1 style={{color:'white',}}>amazing works</h1>
+                <p style={{color:'white'}}>
                   Creativity involves breaking out of expected &amp; repeatable
                   patterns in order to look at things in different way than ever
                   before.
@@ -24,7 +27,7 @@ const WorksHeader = ({ sliderRef }) => {
               </div>
 
               <div className="bactxt custom-font valign">
-                <span className="full-width">Works</span>
+                {/* <span className="full-width">Works</span> */}
               </div>
             </div>
           </div>
