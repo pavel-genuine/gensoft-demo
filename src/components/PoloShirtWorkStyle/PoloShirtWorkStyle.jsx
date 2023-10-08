@@ -198,7 +198,7 @@ const PoloShirtWorkStyle = () => {
       <div className="container">
         <div className="row lg-space">
           {allProducts.map((item,i) => (
-            <div className="col-lg-4 col-md-6">
+            <div key={i} className="col-lg-4 col-md-6">
               <div className="item">
                 <a>
                   <div
