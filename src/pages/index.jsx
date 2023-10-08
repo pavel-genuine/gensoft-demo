@@ -46,6 +46,7 @@ const Homepage = () => {
       <LightTheme>
        
         {/* <Intro5 /> */}
+        
         <SliderOne></SliderOne>
         <AboutUs6 />
 
