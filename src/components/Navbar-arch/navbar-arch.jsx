@@ -64,7 +64,17 @@ const NavbarArch = ({ navbarRef, theme }) => {
         </h5> */}
 
         <Link href={"/"}>
-          <img style={{ width: "80px" }} src={logo.src} alt="" />
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img
+              style={{ width: "80px", marginRight: "20px" }}
+              src={logo.src}
+              alt=""
+            />
+            <div className="text-white">
+              <h4>PURBASHA </h4>
+              <h6>Composite Tex Ltd.</h6>
+            </div>
+          </div>
         </Link>
 
         <button
@@ -150,7 +160,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
                 Team
               </p>
             </li>
-     
+
             <li className="nav-item">
               <p
                 className="nav-link"
