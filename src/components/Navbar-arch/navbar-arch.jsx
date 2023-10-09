@@ -1,23 +1,71 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import Link from "next/link";
 import appData from "../../data/app.json";
 import { handleDropdown, handleMobileDropdown } from "../../common/navbar";
 import logo from "../../../public/assets/purbasha/logo.png";
-
+import { useState } from "react";
 
 const NavbarArch = ({ navbarRef, theme }) => {
-  
+  const [selectedTag, setSelectedTag] = useState(" ");
+
+  const handleScrollProduct = () => {
+    const element = document.getElementById("product");
+
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleScrollAbout = () => {
+    const element = document.getElementById("about");
+
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleScrollTeam = () => {
+    const element = document.getElementById("team");
+
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleScrollProject = () => {
+    const element = document.getElementById("project");
+
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleScrollTestimonials = () => {
+    const element = document.getElementById("testimonials");
+
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <nav style={{background: 'black'}} className="navbar navbar-expand-lg " ref={navbarRef}>
+    <nav
+      style={{ background: "black" }}
+      className="navbar navbar-expand-lg "
+      ref={navbarRef}
+    >
       <div className="container">
-        
         {/* <h5 style={{backgroundColor:'green',borderRadius:'10%', color:'white',textAlign:'center',paddingRight:'10px',paddingLeft:'10px',marginLeft:'10px'}}  href="/">
          Purbasha
         </h5> */}
 
-        <img style={{ width: "80px" }} src={logo.src} alt=""  />
+        <Link href={"/"}>
+          <img style={{ width: "80px" }} src={logo.src} alt="" />
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -36,16 +84,9 @@ const NavbarArch = ({ navbarRef, theme }) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Home
+            <li className="nav-item">
+              <Link href={"/"}>
+                <p className="nav-link nav-item">Home</p>
               </Link>
             </li>
             <li className="nav-item dropdown" onClick={handleDropdown}>
@@ -53,115 +94,77 @@ const NavbarArch = ({ navbarRef, theme }) => {
                 className="nav-link dropdown-toggle"
                 data-toggle="dropdown"
                 data-scroll-nav="0"
+                onClick={() => {
+                  // handleScrollProduct();
+                }}
               >
                 Products
               </span>
-              
-              <div className="dropdown-menu">
-                <Link
-                  className="dropdown-item"
-                  href={`/underwear`}
-                >
-                  Underwear
-                </Link>
-                <Link
-                  className="dropdown-item"
-                  href={`/t-shirt`}
-                >
-                  T-Shirt
-                </Link>
-                <a
-                  className="dropdown-item"
-                  href={``}
-                >
-                  Polo Shirt
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={``}
-                >
-                  Sweat Shirt
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={``}
-                >
-                  Hoodie
-                </a>
 
+              <div className="dropdown-menu">
+                <Link href={`/underwear`}>
+                  <p className="dropdown-item">Underwear</p>
+                </Link>
+                <Link href={`/t-shirt`}>
+                  <p className="dropdown-item">T-Shirt</p>
+                </Link>
+                <Link href={`/polo-shirt`}>
+                  <p className="dropdown-item"> Polo Shirt</p>
+                </Link>
+                <Link href={`/sweat-shirt`}>
+                  <p className="dropdown-item"> Sweat Shirt</p>
+                </Link>
+                <Link href={`/hoodie`}>
+                  <p className="dropdown-item"> Hoodie</p>
+                </Link>
               </div>
             </li>
 
             <li className="nav-item">
-              <Link
+              <p
                 className="nav-link"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                onClick={() => {
+                  handleScrollAbout();
+                }}
               >
                 About
-              </Link>
+              </p>
             </li>
             <li className="nav-item">
-              <Link
+              <p
                 className="nav-link"
-                to="po-arch"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                onClick={() => {
+                  handleScrollProject();
+                }}
               >
-                Works
-              </Link>
+                Projects
+              </p>
             </li>
             <li className="nav-item">
-              <Link
+              <p
                 className="nav-link"
-                to="team-arch"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                onClick={() => {
+                  handleScrollTeam();
+                }}
               >
                 Team
-              </Link>
+              </p>
             </li>
+     
             <li className="nav-item">
-              <Link
+              <p
                 className="nav-link"
-                to="testimonials-arch"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                onClick={() => {
+                  handleScrollTestimonials();
+                }}
               >
                 Testimonials
-              </Link>
+              </p>
             </li>
+
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="blog-arch"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Blog
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="contact-arch"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Contact
+              <Link href={"/contact"}>
+                <p className="nav-link">Contact</p>
               </Link>
             </li>
           </ul>

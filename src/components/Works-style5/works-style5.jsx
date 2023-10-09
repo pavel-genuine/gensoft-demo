@@ -12,7 +12,7 @@ const WorksStyle5 = () => {
     }, 1000);
   }, []);
   return (
-    <section className="portfolio po-arch section-padding pb-70" id="po-arch">
+    <section className="portfolio po-arch section-padding pb-70" id="project">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">

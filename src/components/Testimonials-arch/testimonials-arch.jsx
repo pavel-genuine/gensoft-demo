@@ -10,7 +10,7 @@ class TestimonialsArch extends React.Component {
   }
   renderArrows = () => {
     return (
-      <div className="arrows">
+      <div id="testimonials" className="arrows">
         <div className="container">
           <div
             onClick={() => this.slider.slickNext()}

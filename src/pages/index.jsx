@@ -52,7 +52,7 @@ const Homepage = () => {
 
         {/* <Services6 /> */}
 
-        <section className="features-section gray-bg pt-40 pb-40">
+        <section id="product" className="features-section gray-bg pt-40 pb-40">
           <div className="container-fluid">
             {/*====== Project Slider ======*/}
             <Slider
