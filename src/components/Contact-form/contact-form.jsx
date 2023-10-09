@@ -17,7 +17,7 @@ const ContactForm = () => {
   return (
     <section className="contact section-padding">
       <div className="container">
-        <div >
+        <div>
           {/* <div className="col-lg-6">
             <div className="form md-mb50">
               <h4 className="fw-700 color-font mb-50">Get In Touch.</h4>
@@ -97,18 +97,28 @@ const ContactForm = () => {
               </h3>
               <div className="item mb-40">
                 <h5>
-                  <a href="#0">{ContactFromDate.email}</a>
+                  <a href="mailto:info@purbashtex.com">info@purbashtex.com</a>
                 </h5>
-                <h5>{ContactFromDate.phone}</h5>
+                <h5>
+                  {" "}
+                  <a href="tel:+88 02 55093533"> +88 02 55093533 </a>
+                </h5>
               </div>
               <h3 className="wow" data-splitting>
                 Visit Us.
               </h3>
+              <br />
               <div className="item">
-                <h6>
-                  {ContactFromDate.location.first}
+                <h6 className="wow">
+                  CORPORATE OFFICE:
                   <br />
-                  {ContactFromDate.location.second}
+                  HOUSE# 68, LAKE DRIVE ROAD , SECTOR# 07, UTTARA DHAKA-1230.
+                  <br />
+                  <br />
+                  FACTORY ADDRESS:
+                  <br />
+                  HOBIRBARI , JAMIRDIYA , SQUARE MASTERBARI, BHALUKA ,
+                  MYMENSINGH.
                 </h6>
               </div>
               <div className="social mt-50">

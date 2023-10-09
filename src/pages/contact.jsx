@@ -10,8 +10,6 @@ const Contact = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
-
-
   return (
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} theme="themeL" />
@@ -20,11 +18,10 @@ const Contact = () => {
         <ContactForm />
         <div className="map" id="ieatmaps">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6010.126439563913!2d-100.75478744312291!3d41.13314584948978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2z2KfZhNmI2YTYp9mK2KfYqiDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1644259110384!5m2!1sar!2seg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21583.93593889504!2d90.36838743033927!3d24.30378068777938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3756719593294aaf%3A0x5555d7767b00aeec!2sPurbasha%20Composite%20Tex%20Ltd.!5e0!3m2!1sen!2sbd!4v1696835233143!5m2!1sen!2sbd"
             loading="lazy"
           ></iframe>
         </div>
-
       </div>
     </LightTheme>
   );

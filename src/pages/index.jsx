@@ -72,12 +72,12 @@ const Homepage = () => {
                     <div className="number">01</div>
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/underwear">
                           <a>Underwear</a>
                         </Link>
                       </h3>
                       <p>International Standard</p>
-                      <Link legacyBehavior href="/">
+                      <Link legacyBehavior href="/underwear">
                         <a className="icon-btn">
                           <i className="fal fa-long-arrow-right" />
                         </a>
@@ -87,7 +87,7 @@ const Homepage = () => {
                   <div className="project-content">
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/underwear">
                           <a>Underwear</a>
                         </Link>
                       </h3>
@@ -107,12 +107,12 @@ const Homepage = () => {
                     <div className="number">02</div>
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/t-shirt">
                           <a>T-Shirt</a>
                         </Link>
                       </h3>
                       <p>International Standard</p>
-                      <Link legacyBehavior href="/">
+                      <Link legacyBehavior href="/t-shirt">
                         <a className="icon-btn">
                           <i className="fal fa-long-arrow-right" />
                         </a>
@@ -122,7 +122,7 @@ const Homepage = () => {
                   <div className="project-content">
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/t-shirt">
                           <a>T-Shirt</a>
                         </Link>
                       </h3>
@@ -142,12 +142,12 @@ const Homepage = () => {
                     <div className="number">03</div>
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/polo-shirt">
                           <a>Polo Shirt</a>
                         </Link>
                       </h3>
                       <p>International Standard</p>
-                      <Link legacyBehavior href="/">
+                      <Link legacyBehavior href="/polo-shirt">
                         <a className="icon-btn">
                           <i className="fal fa-long-arrow-right" />
                         </a>
@@ -157,7 +157,7 @@ const Homepage = () => {
                   <div className="project-content">
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/polo-shirt">
                           <a>Polo Shirt</a>
                         </Link>
                       </h3>
@@ -177,12 +177,12 @@ const Homepage = () => {
                     <div className="number">04</div>
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/sweat-shirt">
                           <a>Sweat Shirt</a>
                         </Link>
                       </h3>
                       <p>International Standard</p>
-                      <Link legacyBehavior href="/">
+                      <Link legacyBehavior href="/sweat-shirt">
                         <a className="icon-btn">
                           <i className="fal fa-long-arrow-right" />
                         </a>
@@ -192,7 +192,7 @@ const Homepage = () => {
                   <div className="project-content">
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/sweat-shirt">
                           <a>Sweat Shirt</a>
                         </Link>
                       </h3>
@@ -212,12 +212,12 @@ const Homepage = () => {
                     <div className="number">05</div>
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/hoodie">
                           <a>Hoodie</a>
                         </Link>
                       </h3>
                       <p>International Standard</p>
-                      <Link legacyBehavior href="/">
+                      <Link legacyBehavior href="/hoodie">
                         <a className="icon-btn">
                           <i className="fal fa-long-arrow-right" />
                         </a>
@@ -227,7 +227,7 @@ const Homepage = () => {
                   <div className="project-content">
                     <div className="text text-white">
                       <h3 className="title">
-                        <Link legacyBehavior href="/">
+                        <Link legacyBehavior href="/hoodie">
                           <a>Hoodie</a>
                         </Link>
                       </h3>
