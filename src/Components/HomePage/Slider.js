@@ -7,11 +7,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import img1 from "../../assets/imgs/banner1.jpg"
-import img2 from "../../assets/imgs/banner2.jpg"
-import img3 from "../../assets/imgs/banner3.jpg"
-import img4 from "../../assets/imgs/banner4.jpg"
-import img5 from "../../assets/imgs/banner5.jpg"
+import img1 from "../../assets/images/page-1.jpg"
+import img2 from "../../assets/images/page-2.jpg"
+import img3 from "../../assets/images/page-3.jpg"
+import img4 from "../../assets/images/page-4.jpg"
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -24,14 +23,14 @@ export default function Slider() {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div className='mt-5'>
+        <div className='mt-16'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                // }}
                 pagination={{
                     clickable: true,
                 }}
@@ -41,28 +40,23 @@ export default function Slider() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='h-[100vh]'>
+                    <div className='h-[93vh]'>
                         <img className='object-fit' src={img1.src} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[100vh]'>
+                    <div className='h-[93vh]'>
                         <img className='object-fit' src={img2.src} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[100vh]'>
+                    <div className='h-[93vh]'>
                         <img className='object-fit' src={img3.src} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[100vh]'>
+                    <div className='h-[93vh]'>
                         <img className='object-fit' src={img4.src} alt="" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='h-[100vh]'>
-                        <img className='object-fit' src={img5.src} alt="" />
                     </div>
                 </SwiperSlide>
 

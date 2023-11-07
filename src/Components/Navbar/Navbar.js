@@ -36,7 +36,7 @@ const Navbar = ({ isHome }) => {
         <div className='w-[100vw] absolute ' style={{ zIndex: 100 }}>
 
             <div id='' style={{ transition: "all .5s", }} className=
-                {`nav w-[100vw] h-[60px] md:h-[80px]  fixed  ${!background ? 'bg-opacity-100 bg-[red] drop-shadow-lg' : 'drop-shadow-lg bg-opacity-100 bg-[red] backdrop-blur-md'} `}
+                {`nav w-[100vw] h-[60px] md:h-[80px]  fixed  ${!background ? 'bg-opacity-100 bg-[#C4000B] drop-shadow-lg' : 'drop-shadow-lg bg-opacity-100 bg-[#C4000B] backdrop-blur-md'} `}
             >
                 <div class="lg:navbar lg:w-[87%] lg:pl-[2.5vw] mx-auto lg:flex my-4  ">
                     <div class="lg:navbar-start">
@@ -52,7 +52,7 @@ const Navbar = ({ isHome }) => {
 
                             >
                                 <img
-                                    className='lg:w-[32%] w-[40%] mx-[10px] lg:mx-[-4vw] bg-[white] px-3 py-2 rounded-full bg-opacity-70'
+                                    className='lg:w-[32%] w-[25%] mx-[10px] lg:mx-[-4vw] px-3 py-2 bg-opacity-70'
                                     src={logo.src} alt="" srcset=""
                                 />
                              
