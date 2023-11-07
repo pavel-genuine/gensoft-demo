@@ -43,15 +43,15 @@ const Home = (props) => {
     <main>
 
       <Head>
-        <title>Home | Rainbow Tex</title>
-        <meta property="og:title" content="Rainbow Tex" />
+        <title>Home | Olympic</title>
+        <meta property="og:title" content="Olympicbd" />
         <meta
           name="og:description"
-          content="Rainbow Tex is Bangladeshi Ready Made Garments Sourcing Company. High-quality clothing exports from Bangladesh. Best in Fashion."
+          content="OLYMPIC INDUSTRIES LIMITED"
         />
 
-        <meta property="og:url" content="https://www.rainbowtexbd.com/" />
-        <meta property="og:image" content="https://i.ibb.co/x1mC4qm/Screenshot-2023-06-01-124833.png" />
+        {/* <meta property="og:url" content="https://www.rainbowtexbd.com/" />
+        <meta property="og:image" content="https://i.ibb.co/x1mC4qm/Screenshot-2023-06-01-124833.png" /> */}
 
       </Head>
       <div className=' overflow-hidden bg-[red]' style={{ zIndex: -1 }}>
