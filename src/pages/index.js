@@ -10,7 +10,8 @@ import img2 from "../assets/imgs/delight.jpg"
 import img3 from "../assets/images/page-7.jpg"
 import img4 from "../assets/images/page-8.jpg"
 import img5 from "../assets/images/page-9.jpg"
-import img6 from "../assets/images/energy.png"
+import img6 from "../assets/images/page-6.jpg"
+import img7 from "../assets/images/energy.png"
 
 const Categories = dynamic(() => import('@/Components/Categories/Categories'), {
   loading: () => <p>Loading...</p>,
@@ -82,13 +83,25 @@ const Home = (props) => {
           <div>
             <img className='w-[100vw]' src={img2.src} alt="" />
           </div>
-          {/* <div className='absolute bottom-[10%] left-[20%]'>
+        </motion.div>
+
+        {/* <motion.div
+          className='relative'
+          viewport={{ once: true }}
+          initial={{ opacity: .5, scale: .8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: .5, delay: 0 }}
+        >
+          <div>
+            <img className='w-[100vw]' src={img6.src} alt="" />
+          </div>
+          <div className='absolute bottom-[10%] left-[20%]'>
           <div>
           <img className='w-[150px]  object-fill' src={img6.src} alt="" />
           </div>
             <h2>dkshfjsdkhfks</h2>
-          </div> */}
-        </motion.div>
+          </div>
+        </motion.div> */}
 
         <motion.div
           className='relative'

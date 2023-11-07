@@ -23,14 +23,14 @@ export default function Slider() {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div className='mt-16'>
+        <div className='mt-20'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
-                // autoplay={{
-                //     delay: 2500,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 pagination={{
                     clickable: true,
                 }}
@@ -40,23 +40,23 @@ export default function Slider() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='h-[93vh]'>
-                        <img className='object-fit' src={img1.src} alt="" />
+                    <div className=''>
+                        <img className='object-fit h-[100vh]' src={img1.src} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[93vh]'>
-                        <img className='object-fit' src={img2.src} alt="" />
+                    <div className=''>
+                        <img className='object-fit h-[100vh]' src={img2.src} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[93vh]'>
-                        <img className='object-fit' src={img3.src} alt="" />
+                    <div className=''>
+                        <img className='object-fit h-[100vh]' src={img3.src} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[93vh]'>
-                        <img className='object-fit' src={img4.src} alt="" />
+                    <div className=''>
+                        <img className='object-fit h-[100vh]' src={img4.src} alt="" />
                     </div>
                 </SwiperSlide>
 
