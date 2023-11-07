@@ -47,7 +47,7 @@ const Home = (props) => {
         <meta property="og:title" content="Olympicbd" />
         <meta
           name="og:description"
-          content="OLYMPIC INDUSTRIES LIMITED"
+          content="OLYMPIC INDUSTRIES LIMITED."
         />
 
         {/* <meta property="og:url" content="https://www.rainbowtexbd.com/" />
