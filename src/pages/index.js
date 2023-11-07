@@ -103,7 +103,7 @@ const Home = (props) => {
         </motion.div>
 
         <motion.div
-          className='relative'
+          className='relative mt-0 pt-0'
           viewport={{ once: true }}
           initial={{ opacity: .5, scale: .8 }}
           whileInView={{ opacity: 1, scale: 1 }}

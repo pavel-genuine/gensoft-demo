@@ -15,6 +15,7 @@ import WhatsApp from '@/Components/WhatsApp/WhatsApp';
 import { SunnyMorning } from 'moving-letters'
 import Head from 'next/head'
 import localFont from 'next/font/local';
+import logo1 from "../assets/imgs/logo.png"
 
 
 const roboto = localFont({
@@ -74,7 +75,17 @@ export default function App({ Component, pageProps }) {
               <div className=' h-[100vh] w-[100vw] flex justify-center items-center bg-[red] text-[white] text-center overflow-hidden'>
               <div className='scale-[.8] lg:scale-[1.5] lg:flex '>
 
-                <SunnyMorning text='Olympic' />
+                {/* <SunnyMorning text='Olympic' /> */}
+                <motion.div className='relative'
+          viewport={{ once: true }}
+          initial={{ opacity: .5, scale: .8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: .5, delay: 0 }}
+          >
+              <img className='' src={logo1.src} alt="" />
+                </motion.div>
+                
+                
                 <div className='lg:ml-5'>
                   {/* <SunnyMorning text='tex' /> */}
                 </div>
