@@ -25,7 +25,7 @@ export default function Slider() {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div className='mt-5'>
+        <div className='mt-20'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -62,18 +62,18 @@ export default function Slider() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='h-[100vh]'>
-                        <img className='object-fit' src={img1.src} alt="" />
+                    <div className=''>
+                        <img className='object-fit h-[100vh]' src={img1.src} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[100vh]'>
-                        <img className='object-fit' src={img2.src} alt="" />
+                    <div className=''>
+                        <img className='object-fit h-[100vh]' src={img2.src} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[100vh]'>
-                        <img className='object-fit' src={img3.src} alt="" />
+                    <div className=''>
+                        <img className='object-fit h-[100vh]' src={img3.src} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

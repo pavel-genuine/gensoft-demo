@@ -110,6 +110,24 @@ const Home = (props) => {
           </div>
         </motion.div> */}
 
+        {/* <motion.div
+          className='relative'
+          viewport={{ once: true }}
+          initial={{ opacity: .5, scale: .8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: .5, delay: 0 }}
+        >
+          <div>
+            <img className='w-[100vw]' src={img6.src} alt="" />
+          </div>
+          <div className='absolute bottom-[10%] left-[20%]'>
+          <div>
+          <img className='w-[150px]  object-fill' src={img6.src} alt="" />
+          </div>
+            <h2>dkshfjsdkhfks</h2>
+          </div>
+        </motion.div> */}
+
         <motion.div
           // className='relative'
           // viewport={{ once: true }}
