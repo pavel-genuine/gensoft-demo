@@ -4,6 +4,7 @@ import '@/styles/mobileNav.css'
 import '@/styles/testimony.css'
 
 import '../styles/slider.css';
+import '../styles/awesomeslider.scss';
 
 import { useEffect, useState } from 'react'
 
@@ -15,7 +16,7 @@ import WhatsApp from '@/Components/WhatsApp/WhatsApp';
 import { SunnyMorning } from 'moving-letters'
 import Head from 'next/head'
 import localFont from 'next/font/local';
-
+import logo1 from "../assets/imgs/logo.png"
 
 const roboto = localFont({
   src: '../assets/fonts/Neuropol X W00 Expanded/Neuropol X W00 Expanded.ttf',
@@ -72,14 +73,17 @@ export default function App({ Component, pageProps }) {
 
             <div className={roboto.className}>
               <div className=' h-[100vh] w-[100vw] flex justify-center items-center bg-[red] text-[white] text-center overflow-hidden'>
-              <div className='scale-[.8] lg:scale-[1.5] lg:flex '>
+                <div className=''>
+                  <motion.div className='relative'
+                    viewport={{ once: true }}
+                    initial={{ opacity: 1, scale: .1 }}
+                    whileInView={{ opacity: 1, scale:.3 }}
+                    transition={{ duration: .5, delay: 0 }}
+                  >
+                    <img className='' src={logo1.src} alt="" />
+                  </motion.div>
 
-                <SunnyMorning text='Olympic' />
-                <div className='lg:ml-5'>
-                  {/* <SunnyMorning text='tex' /> */}
                 </div>
-
-              </div>
               </div>
             </div>
 

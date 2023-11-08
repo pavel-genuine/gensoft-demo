@@ -25,3 +25,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+:root {
+  --swiper-theme-color: #000;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next { color: red; }

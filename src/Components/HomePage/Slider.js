@@ -7,11 +7,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import img1 from "../../assets/imgs/banner1.jpg"
-import img2 from "../../assets/imgs/banner2.jpg"
-import img3 from "../../assets/imgs/banner3.jpg"
-import img4 from "../../assets/imgs/banner4.jpg"
-import img5 from "../../assets/imgs/banner5.jpg"
+
+import img1 from "../../assets/imgs/page-1.jpg"
+import img2 from "../../assets/imgs/page-2.jpg"
+import img3 from "../../assets/imgs/page-3.jpg"
+import img4 from "../../assets/imgs/page-4.jpg"
+
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -35,6 +36,26 @@ export default function Slider() {
                 pagination={{
                     clickable: true,
                 }}
+
+                 injectStyles={ [
+                    `
+                      .swiper-button-next,
+                      .swiper-button-prev {
+                        background-color: white;
+                        padding: 8px 16px;
+                        border-radius: 100%;
+                        border: 2px solid black;
+                        color: red;
+                      }
+                      .swiper-pagination-bullet{
+                        width: 40px;
+                        height: 40px;
+                        background-color: red;
+                      }
+                  `
+                  ]}
+
+                
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
@@ -60,11 +81,7 @@ export default function Slider() {
                         <img className='object-fit' src={img4.src} alt="" />
                     </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <div className='h-[100vh]'>
-                        <img className='object-fit' src={img5.src} alt="" />
-                    </div>
-                </SwiperSlide>
+             
 
                 <div className="autoplay-progress" slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>

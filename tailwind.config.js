@@ -17,7 +17,7 @@ theme: {
 
     'primary': '#000',
     'textPrimary':'#000',
-    'accent':'#4ADE80',
+    'accent':'red',
     'nav': 'grey', 
     'navBg': '#1F2937', 
     'bg': '#18181B',
