@@ -14,6 +14,8 @@ import img5 from "../assets/imgs/page-9.jpg"
 import img6 from "../assets/imgs/page-6.jpg"
 import img7 from "../assets/imgs/energy.png"
 import Delight from '@/Components/HomePage/Delight';
+import Navbar from '@/Components/Navbar/Navbar';
+import Footer from '@/Components/Footer/Footer';
 
 const Categories = dynamic(() => import('@/Components/Categories/Categories'), {
   loading: () => <p>Loading...</p>,
@@ -60,7 +62,7 @@ const Home = (props) => {
 
       </Head>
       <div className=' overflow-hidden bg-[red]' style={{ zIndex: -1 }}>
-      <Navbar isHome={isHome}></Navbar>
+      <Navbar ></Navbar>
              
         <Slider></Slider>
 
