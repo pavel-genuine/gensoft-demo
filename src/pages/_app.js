@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }) {
 
     setTimeout(() => {
       setIsOpen(true)
-    }, 2000)
+    }, 1000)
 
   }, [])
 
@@ -72,14 +72,23 @@ export default function App({ Component, pageProps }) {
           !isOpen ?
 
             <div className={roboto.className}>
-              <div className=' h-[100vh] w-[100vw] flex justify-center items-center bg-[red] text-[white] text-center overflow-hidden'>
+              <div className=' h-[100vh] w-[100vw] flex justify-center items-center bg-[black] text-[white] text-center overflow-hidden'>
                 <div className=''>
-                  <motion.div className='relative'
+
+                <motion.div className='absolute top-[50vh] right-[50vw] overflow-hidden'
                     viewport={{ once: true }}
                     initial={{ opacity: 1, scale: .1 }}
+                    whileInView={{ opacity: 1, scale:40}}
+                    transition={{ duration: 1, delay: 0 }}
+                  ><div className='w-[50px] h-[50px] rounded-full bg-[red]  overflow-hidden'>
+                    </div></motion.div>
+                  <motion.div className='relative'
+                    viewport={{ once: true }}
+                    initial={{ opacity: 1, scale: .05 }}
                     whileInView={{ opacity: 1, scale:.3 }}
                     transition={{ duration: .5, delay: 0 }}
                   >
+
                     <img className='' src={logo1.src} alt="" />
                   </motion.div>
 
@@ -89,10 +98,10 @@ export default function App({ Component, pageProps }) {
 
             :
             <div>
-              <Navbar isHome={isHome}></Navbar>
+            
               {/* <WhatsApp></WhatsApp> */}
               <Component setIsHome={setIsHome} {...pageProps} />
-              <Footer></Footer>
+              
             </div>
 
         }

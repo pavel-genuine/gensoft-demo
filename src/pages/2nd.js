@@ -9,6 +9,16 @@ import img1 from "../assets/imgs/delight.jpg"
 import img2 from "../assets/imgs/health.png"
 import img3 from "../assets/imgs/values.png"
 import img4 from "../assets/imgs/focus.png"
+
+
+import bottom from '../assets/imgs/bottom.png'
+import product from '../assets/imgs/Product-01.png'
+import tab from '../assets/imgs/logo.png'
+import news1 from '../assets/imgs/01.png'
+import news2 from '../assets/imgs/02.png'
+import news3 from '../assets/imgs/03.png'
+import news4 from '../assets/imgs/04.png'
+
 import AwesomeSlider from 'react-awesome-slider';
 import ASlider from '@/Components/HomePage/Carousel';
 import Carousel from '@/Components/HomePage/Carousel';
@@ -57,58 +67,48 @@ const Home = (props) => {
         <meta property="og:image" content="https://i.ibb.co/x1mC4qm/Screenshot-2023-06-01-124833.png" /> */}
 
       </Head>
-      <div className=' overflow-hidden bg-[red]' style={{ zIndex: -1 }}>
+      <div style={{ zIndex: 10 }}  className='absolute top-[20px] left-[5vw] text-[grey] font-semibold'>
+       <div className='flex '>
+       <p >Our Brands</p>
+        <p className='mx-[15vw]'>Our Values</p>
+        <img className='w-[250px]' src={tab.src} alt="" />
+        <p className='mx-[15vw]'>Our Achievements</p>
+        <p>Our Focus</p>
+       </div>
+
+      </div>
+
+      <div className=' overflow-hidden bg-[white]' style={{ zIndex: -1 }}>
         {/* <Slider></Slider> */}
-       <Carousel></Carousel>
+        <Carousel></Carousel>
 
-        <motion.div
-          className='relative'
-          viewport={{ once: true }}
-          initial={{ opacity: .5, scale: .8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: .5, delay: 0 }}
-        >
-          <div>
-            <img className='w-[100vw] ' src={img1.src} alt="" />
+
+        <div style={{ zIndex: 10 }} className='absolute top-[60vh]' >
+          <div className='relative'>
+            <img className='w-[120vw] ' src={news1.src} alt="" />
+            <div >
+              <div className='flex absolute bottom-[200px] left-[15vw]  '>
+                <img className='w-[20vw]' src={news2.src} alt="" />
+                <img className='w-[20vw] mx-[5vw]' src={news3.src} alt="" />
+                <img className='w-[20vw]' src={news4.src} alt="" />
+
+              </div>
+
+            </div>
           </div>
-        </motion.div>
+        </div>
+
+        <div className='bg-[white] mt-[78vh]'>
+          <p className='text-center text-bold text-[white] font-bold text-2xl font-Allura mb-10 bg-[red] rounded-full w-[300px] mx-auto px-auto py-3 '>Dive Into Our Delights</p>
+          <p className='text-center text-bold text-[red] font-bold text-5xl'>Our Brands</p>
+          <img src={product.src} alt="" />
+        </div>
+
+<div>
+  <img  className='w-[100vw]' src={bottom.src} alt="" />
+</div>
 
 
-        <motion.div
-          className='relative'
-          viewport={{ once: true }}
-          initial={{ opacity: .5, scale: .8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: .5, delay: 0 }}
-        >
-          <div>
-            <img className='w-[100vw]' src={img2.src} alt="" />
-          </div>
-        </motion.div>
-
-        <motion.div
-          className='relative'
-          viewport={{ once: true }}
-          initial={{ opacity: .5, scale: .8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: .5, delay: 0 }}
-        >
-          <div>
-            <img className='w-[100vw]' src={img3.src} alt="" />
-          </div>
-        </motion.div>
-
-        <motion.div
-          className='relative'
-          viewport={{ once: true }}
-          initial={{ opacity: .5, scale: .8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: .5, delay: 0 }}
-        >
-          <div>
-            <img className='w-[100vw]' src={img4.src} alt="" />
-          </div>
-        </motion.div>
 
 
       </div>

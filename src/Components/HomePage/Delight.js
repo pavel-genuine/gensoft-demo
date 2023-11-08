@@ -29,7 +29,7 @@ export default function Delight() {
                             clickable: true,
                         }}
 
-                        className=" absolut top-0'"
+                        className=" absolut bottom-[500px]'"
                     >
                         <SwiperSlide>
                             <div>

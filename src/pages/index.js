@@ -60,6 +60,8 @@ const Home = (props) => {
 
       </Head>
       <div className=' overflow-hidden bg-[red]' style={{ zIndex: -1 }}>
+      <Navbar isHome={isHome}></Navbar>
+             
         <Slider></Slider>
 
         <motion.div
@@ -165,6 +167,7 @@ const Home = (props) => {
        
 
       </div>
+      <Footer></Footer>
     </main>
   )
 }
