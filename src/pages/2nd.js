@@ -78,12 +78,12 @@ const Home = (props) => {
 
       </div>
 
-      <div className=' overflow-hidden bg-[white]' style={{ zIndex: -1 }}>
+      <div className=' overflow-hidden bg-[red]' style={{ zIndex: -1 }}>
         {/* <Slider></Slider> */}
         <Carousel></Carousel>
 
 
-        <div style={{ zIndex: 10 }} className='absolute top-[60vh]' >
+        <div style={{ zIndex: 10 }} className='absolute top-[95vh]' >
           <div className='relative'>
             <img className='w-[120vw] ' src={news1.src} alt="" />
             <div >

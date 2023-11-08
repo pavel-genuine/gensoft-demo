@@ -25,7 +25,7 @@ export default function Slider2() {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div className='mt-20'>
+        <div className=''>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -37,23 +37,7 @@ export default function Slider2() {
                     clickable: true,
                 }}
 
-                 injectStyles={ [
-                    `
-                      .swiper-button-next,
-                      .swiper-button-prev {
-                        background-color: white;
-                        padding: 8px 16px;
-                        border-radius: 100%;
-                        border: 2px solid black;
-                        color: red;
-                      }
-                      .swiper-pagination-bullet{
-                        width: 40px;
-                        height: 40px;
-                        background-color: red;
-                      }
-                  `
-                  ]}
+                
 
                 
                 navigation={true}
@@ -77,8 +61,8 @@ export default function Slider2() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[100vh]'>
-                        <img className='object-fit' src={img4.src} alt="" />
+                    <div className=''>
+                        <img className='object-fit h-[100vh]' src={img4.src} alt="" />
                     </div>
                 </SwiperSlide>
              
