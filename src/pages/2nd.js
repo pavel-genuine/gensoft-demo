@@ -10,6 +10,7 @@ import img2 from "../assets/imgs/health.png"
 import img3 from "../assets/imgs/values.png"
 import img4 from "../assets/imgs/focus.png"
 import footer from "../assets/imgs/footer.png"
+import nav from "../assets/imgs/nav2.png"
 
 
 import bottom from '../assets/imgs/bottom1.png'
@@ -69,12 +70,10 @@ const Home = (props) => {
         <meta property="og:image" content="https://i.ibb.co/x1mC4qm/Screenshot-2023-06-01-124833.png" /> */}
 
       </Head>
-      <div style={{ zIndex: 100 }} className='w-[100vw] absolute  text-[white] font-semibold'>
-        <div className='flex items-center fixed w-[100vw]  bg-[grey] py-2 border border-b'>
-          <p className='ml-[10vw]'>Our Brands</p>
-          <p className='mx-[10vw]'>Our Values</p>
-          <img className='w-[250px] ml-[5vw]' src={tab.src} alt="" />
-          <p className='ml-[10vw]'>Our Achievements</p>
+      <div style={{ zIndex: 100 }} className='fixed top-0'>
+        <div className='relative '>
+          <img style={{ zIndex: 0 }} className='w-[100vw]' src={nav.src} alt="" />
+
 
         </div>
 
@@ -87,30 +86,30 @@ const Home = (props) => {
 
         <div style={{ zIndex: 10 }} className='absolute top-[100vh]' >
           <div className='relative'>
-            <img className='' src={news1.src} alt="" />
+            <img className='w-[100vw]' src={news1.src} alt="" />
 
           </div>
         </div>
 
-        <div className='bg-[white] mt-[110vh]'>
-          <img src={product.src} alt="" />
+        <div className='bg-[white] mt-[130vh]'>
+          <img className='w-[100vw]' src={product.src} alt="" />
         </div>
 
         <div >
           <img style={{ zIndex: -1 }} className='w-[100vw] mb-10' src={bottom.src} alt="" />
 
-       <div style={{ zIndex: 100 }} className='fixed bottom-0'>
-       <div className='relative '>
-            <img style={{ zIndex: 0 }} className='w-[100vw]' src={footer.src} alt="" />
+          <div style={{ zIndex: 100 }} className='fixed bottom-0'>
+            <div className='relative '>
+              <img style={{ zIndex: 0 }} className='w-[100vw]' src={footer.src} alt="" />
 
-            <div style={{ zIndex: 10 }} className='bg-[white] absolute left-[100px] bottom-[5px] px-5 py-3 font-semibold  flex space-x-10 bottom-0'>
+              {/* <div style={{ zIndex: 10 }} className='bg-[white] absolute left-[100px] bottom-[5px] px-5 py-3 font-semibold  flex space-x-10 bottom-0'>
               <p>About Us |</p>
               <p>Terms & Conditions |</p>
               <p>Privacy Policy |</p>
               <p>Contact US |</p>
+            </div> */}
             </div>
           </div>
-       </div>
         </div>
 
 
