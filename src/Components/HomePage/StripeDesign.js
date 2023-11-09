@@ -133,7 +133,7 @@ export default function StripeDesign() {
                                     </div>
                                     <div
                                         className={classNames(
-                                            "bottom-[50px] md:left-10  w-[90%] text-center transition-[transform,opacity] absolute p-0",
+                                            "bottom-[20px] md:left-10  w-[90%] text-center transition-[transform,opacity] absolute p-0",
                                             activeItem == index
                                                 ? "translate-x-0 opacity-100"
                                                 : "translate-x-4 opacity-0"
