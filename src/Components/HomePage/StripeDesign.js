@@ -10,25 +10,25 @@ import hover2 from "../../assets/imgs/hover2.jpg"
 import hover3 from "../../assets/imgs/hover3.jpg"
 
 export const persons = [
-   
-   
-    
+
+
+
     {
-        img:hover1.src,
+        img: hover1.src,
 
     },
     {
-        img:hover2.src,    
-    
+        img: hover2.src,
+
     },
-   
+
     {
-        img:hover3.src,    
-  
+        img: hover3.src,
+
     },
-   
-  
-   
+
+
+
 ];
 
 
@@ -49,8 +49,8 @@ export default function StripeDesign() {
 
         function cycle(index) {
 
-          
-     setTimeout(function () {
+
+            setTimeout(function () {
 
                 index++;
 
@@ -70,14 +70,14 @@ export default function StripeDesign() {
 
     }, [persons.length])
 
-    
+
 
     return (
         <motion.div
-        viewport={{ once: true }}
-        initial={{ opacity: .3, scale: .85}}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: .7, delay: 0 }}
+            viewport={{ once: true }}
+            initial={{ opacity: .3, scale: .85 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: .7, delay: 0 }}
         >
             <div className="flex h-full w-full items-center justify-center w-[100vw] bg-bg">
                 <div className="md:w-[80vw] w-[100vw]  ">
@@ -100,10 +100,10 @@ export default function StripeDesign() {
                                 key={index}
                             >
                                 <div className={`relative  ${activeItem === index ? 'h-[70vh]' : 'h-[70vh] '} w-full overflow-hidden rounded bg-[#c9c6c7] `}>
-                                <LazyLoadImage
+                                    <LazyLoadImage
                                         className="absolute right-0 top-1/2 object-cover  -translate-y-1/2  grayscal left-1/2 h-[100%] w-[100%] -translate-x-1/2"
                                         src={person.img}
-                                     
+
                                         width="590px"
                                         height="680px"
                                     />
@@ -115,13 +115,21 @@ export default function StripeDesign() {
                                     />
                                     <div
                                         className={classNames(
-                                            "left-2 top-8 md:left-8  w-[90%] text-center transition-[transform,opacity] absolute p-0",
-                                            activeItem === index
+                                            "top-[100px] md:left-10  w-[90%] text-center transition-[transform,opacity] absolute p-0",
+                                            activeItem !== index
                                                 ? "translate-x-0 opacity-100"
                                                 : "translate-x-4 opacity-0"
                                         )}
                                     >
-                                       
+                                       <div className="flex space-x-2 items-center text-[#f22929] font-semibold">
+                                       <p className="text-sm   md:text-lg ">
+                                            See More
+                                        </p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                        </svg>
+                                       </div>
+
                                     </div>
                                 </div>
                             </li>
