@@ -115,13 +115,13 @@ export default function StripeDesign() {
                                     />
                                     <div
                                         className={classNames(
-                                            "top-[100px] md:left-10  w-[90%] text-center transition-[transform,opacity] absolute p-0",
+                                            "top-[100px] md:left-5  w-[90%] text-center transition-[transform,opacity] absolute p-0",
                                             activeItem !== index
                                                 ? "translate-x-0 opacity-100"
                                                 : "translate-x-4 opacity-0"
                                         )}
                                     >
-                                       <div className="flex space-x-2 items-center text-[#9f1010] font-semibold bg-[#d6d5d5] bg-opacity-50 px-2 py-1 rounded w-[150px]">
+                                       <div className="flex space-x-2 items-center text-[#9f1010] font-semibold bg-[#d6d5d5] bg-opacity-50 px-2 py-1 rounded w-[130px]">
                                        <p className="text-sm   md:text-lg ">
                                             See More
                                         </p>
