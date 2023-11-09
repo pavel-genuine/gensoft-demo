@@ -37,7 +37,7 @@ export default function StripeDesign() {
     const wrapperRef = useRef(null);
     const timeoutRef = useRef(null);
 
-    const duration = 3
+    const duration = 6
 
     const goToSlide = (slideIndex) => {
         setActiveItem(slideIndex);

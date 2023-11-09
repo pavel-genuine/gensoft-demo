@@ -87,7 +87,7 @@ function Carousel() {
     const [mouseHover, setMouseHover] = useState('not');
 
     // const slideCount = 15;
-    const duration = 3
+    const duration = 6
 
     const prevSlide = () => {
 
