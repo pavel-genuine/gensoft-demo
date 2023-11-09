@@ -4,25 +4,19 @@ import dynamic from 'next/dynamic';
 import HomePage from '@/Components/HomePage/HomePage'
 import { motion } from "framer-motion"
 import Head from 'next/head'
-import Slider from '@/Components/HomePage/Slider';
-import img1 from "../assets/imgs/delight.jpg"
-import img2 from "../assets/imgs/health.png"
-import img3 from "../assets/imgs/values.png"
-import img4 from "../assets/imgs/focus.png"
 
 
-import bottom from '../assets/imgs/bottom.png'
-import product from '../assets/imgs/Product-01.png'
-import tab from '../assets/imgs/logo.png'
-import news1 from '../assets/imgs/01.png'
-import news2 from '../assets/imgs/02.png'
-import news3 from '../assets/imgs/03.png'
-import news4 from '../assets/imgs/04.png'
+import hover1 from '../assets/imgs/hover1.jpg'
+import hover2 from '../assets/imgs/hover2.jpg'
+import hover3 from '../assets/imgs/hover3.jpg'
 
-import AwesomeSlider from 'react-awesome-slider';
-import ASlider from '@/Components/HomePage/Carousel';
-import Carousel from '@/Components/HomePage/Carousel';
+import extra1 from '../assets/imgs/page-7-extra - Copy.jpg'
+import extra2 from '../assets/imgs/page-8-extra - Copy.jpg'
+
 import Slider2 from '@/Components/HomePage/Slider2';
+import Delight from '@/Components/HomePage/Delight';
+import Nav3 from '@/Components/Navbar/Nav3';
+import StripeDesign from '@/Components/HomePage/StripeDesign';
 
 const Categories = dynamic(() => import('@/Components/Categories/Categories'), {
     loading: () => <p>Loading...</p>,
@@ -68,9 +62,23 @@ const Home = (props) => {
         <meta property="og:image" content="https://i.ibb.co/x1mC4qm/Screenshot-2023-06-01-124833.png" /> */}
 
             </Head>
-           
+            <Nav3></Nav3>
+
             <div>
                 <Slider2></Slider2>
+            </div>
+
+
+        <StripeDesign></StripeDesign>
+
+
+
+
+
+            <div className='relative'>
+                <img className='w-[100vw] mb-10' src={extra1.src} alt="" />
+                <img className='w-[100vw]' src={extra2.src} alt="" />
+
             </div>
 
         </main>

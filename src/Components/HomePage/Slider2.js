@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
+import img0 from "../../assets/imgs/page0.jpg"
 import img1 from "../../assets/imgs/page1.jpg"
 import img2 from "../../assets/imgs/page2.jpg"
 import img3 from "../../assets/imgs/page3.jpg"
@@ -45,6 +46,11 @@ export default function Slider2() {
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className="mySwiper"
             >
+                <SwiperSlide>
+                    <div className=''>
+                        <img className='object-fit h-[100vh]' src={img0.src} alt="" />
+                    </div>
+                </SwiperSlide>
                 <SwiperSlide>
                     <div className=''>
                         <img className='object-fit h-[100vh]' src={img1.src} alt="" />
