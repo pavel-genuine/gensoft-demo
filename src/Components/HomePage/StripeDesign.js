@@ -121,7 +121,25 @@ export default function StripeDesign() {
                                                 : "translate-x-4 opacity-0"
                                         )}
                                     >
-                                       <div className="flex space-x-2 items-center text-[#f22929] font-semibold">
+                                       <div className="flex space-x-2 items-center text-[#9f1010] font-semibold bg-[#d6d5d5] bg-opacity-50 px-2 py-1 rounded w-[150px]">
+                                       <p className="text-sm   md:text-lg ">
+                                            See More
+                                        </p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                        </svg>
+                                       </div>
+
+                                    </div>
+                                    <div
+                                        className={classNames(
+                                            "bottom-[50px] md:left-10  w-[90%] text-center transition-[transform,opacity] absolute p-0",
+                                            activeItem == index
+                                                ? "translate-x-0 opacity-100"
+                                                : "translate-x-4 opacity-0"
+                                        )}
+                                    >
+                                       <div className="flex space-x-2 items-center text-[white] font-semibold">
                                        <p className="text-sm   md:text-lg ">
                                             See More
                                         </p>
